@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        html{
+            height: 100%;
+            background: linear-gradient(to bottom right, #cdffd8, #94b9ff) no-repeat;
+        }
         h1{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 40px 0;
+            text-transform: uppercase;
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
         }
         a{
             text-decoration: none;
@@ -14,20 +21,39 @@
             color: black;
             font-size: 20px;
         }
-        a:hover{
-            color:rgb(160, 45, 27);
+        img:hover{
+            filter: blur(3px);
+            transition: 0.5s;
+        }
+        .element{
+            margin: 20px 50px;
+        }
+        .element, img{
+            border-radius: 7%;
+            width: 370px;
+            height: 200px;
+        }
+        img{
+            border: black solid 2px;
+        }
+        .foto{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
         }
     </style>
 </head>
 <body>
-    <h1>Portfolio</h1>
+    <h1>my Portfolio</h1>
     <div>
-        <ul>
-            <li><a href="https://yananikova.github.io/site1/">first site</a></li>
-            <li><a href="https://yananikova.github.io/site2/">second site</a></li>
-            <li><a href="https://yananikova.github.io/site3/">third site</a></li>
-            <li><a href="https://yananikova.github.io/site4/">fourth site</a></li>
-        </ul>
+        <div class="foto">
+            <div class="element"><a href="https://yananikova.github.io/site1/"><img src="img/img_1.png" alt=""></a></div>
+            <div class="element"><a href="https://yananikova.github.io/site2/"><img src="img/img_2.png" alt=""></a></div>
+            <div class="element"><a href="https://yananikova.github.io/site3/"><img src="img/img_3.png" alt=""></a></div>
+            <div class="element"><a href="https://yananikova.github.io/site4/"><img src="img/img_4.png" alt=""></a></div>
+        </div>
     </div>
 </body>
 </html>
